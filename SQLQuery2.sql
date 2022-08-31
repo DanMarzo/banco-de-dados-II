@@ -1,7 +1,7 @@
 USE pubs
 
-
-
+SELECT stor_id, AVG(qty) AS 'média' FROM sales
+GROUP BY(stor_id)
 
 
 

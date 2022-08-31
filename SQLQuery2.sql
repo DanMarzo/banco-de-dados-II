@@ -1,9 +1,12 @@
 USE pubs
 
+SELECT * FROM sales
+
+SELECT stor_id, title_id FROM sales
+WHERE ord_date LIKE '%15 ' and 
+
 SELECT stor_id, AVG(qty) AS 'média' FROM sales
 GROUP BY(stor_id)
-
-
 
 SELECT title_id, COUNT(title_id) AS qtde FROM titleauthor 
 GROUP BY (title_id) HAVING(COUNT(title_id) > 2)
